@@ -1,5 +1,6 @@
 use actix_web::web;
 mod handler;
+mod model;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()>{

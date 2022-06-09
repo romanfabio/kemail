@@ -1,2 +1,2 @@
-mod user;
-pub use user::register;
+mod auth;
+pub use auth::register;
