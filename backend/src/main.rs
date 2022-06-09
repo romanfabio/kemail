@@ -15,5 +15,6 @@ async fn main() -> std::io::Result<()>{
         App::new()
             .app_data(web::Data::new(client.clone()))
             .service(handler::register)
+            .service(handler::login)
     }).bind(("0.0.0.0", 6969))?.run().await
 }
